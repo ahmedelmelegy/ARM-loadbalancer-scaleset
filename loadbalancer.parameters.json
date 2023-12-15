@@ -21,7 +21,7 @@
             "value": "eastus" 
           },
           "authenticationType": {
-            "value": "sshPublicKey"
+            "value": "password"
           },
           "adminPasswordOrKey": {
             "value": "V.+nety,(>G!<?25d&JMC"
