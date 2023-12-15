@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmSku": {
+            "value": "Standard_A1_v2"
+          },
+          "ubuntuOSVersion": {
+            "value": "18.04-LTS"
+          },
+          "vmssName": {
+            "value": "HeadwayVMSS"
+          },
+          "instanceCount": {
+            "value": 3
+          },
+          "adminUsername": {
+            "value": "melegy"
+          },
+          "location": {
+            "value": "eastus" 
+          },
+          "authenticationType": {
+            "value": "sshPublicKey"
+          },
+          "adminPasswordOrKey": {
+            "value": "V.+"nety,(>G!<?25d&JMC"
+          }
+    }
+}
