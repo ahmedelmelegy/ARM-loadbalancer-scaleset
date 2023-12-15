@@ -13,7 +13,14 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Azure subscription 1(3a97ee21-101f-44ff-83ec-da28e02eb5eb)'
+    subscriptionId: '3a97ee21-101f-44ff-83ec-da28e02eb5eb'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'rsg-eastus'
+    location: 'East US'
+    templateLocation: 'Linked artifact'
+    csmFile: '*.json'
+    deploymentMode: 'Incremental'
