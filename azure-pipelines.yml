@@ -22,5 +22,7 @@ steps:
     resourceGroupName: 'rsg-eastus'
     location: 'East US'
     templateLocation: 'Linked artifact'
-    csmFile: '*.json'
+    csmFile: 'loadbalancer.json'
+    csmParametersFile: 'loadbalancer.parameters.json'
     deploymentMode: 'Incremental'
+    deploymentName: 'loadbalancer'
